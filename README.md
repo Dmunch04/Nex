@@ -1,5 +1,5 @@
 ## Nex
-The Nex programming language. High-level, compiled and weird. Written in Python
+The Nex programming language. High-level, compiled and weird. Written in Python.
 
 ### Example
 Here's a simple example of Nex

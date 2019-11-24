@@ -1,0 +1,47 @@
+(* We dont need underscores *)
+(*
+Str a = "hey".
+Num b = 10.
+Bool c = yes.
+Array d = a, b, c.
+
+met Put [value @Any] @Null ( print? [value]. )
+
+through [1..3 as index] ( Put [d@index]. ) ! how should we get from array by index? we could have a method, like: arr::get[i].
+*)
+
+whilst keyword = "whilst";
+met keyword = "met";
+class keyword = "class";
+break keyword = "break";
+through keyword = "through";
+as keyword = "as";
+expect keyword = "expect";
+else keyword = "idk";
+return keyword = "return";
+import keyword = "use";
+
+integer = ["+" | "-"] {digit};
+float = ["+" | "-"] integer "." {digit};
+identifier = (letter | "_"), {digit | letter | "_"};
+
+operator = "+" | "-" | "*" | "/" | "%" | "power?" | "&" | "|" | "and" | "or" | "<" | "<=" | ">" | ">=";
+
+paren l = "(";
+paren r = ")";
+bracket l = "[";
+bracket r = "]";
+brace l = "{";
+brace r = "}";
+
+letter = "A" | "B" | "C" | "D" | "E" | "F" | "G"
+       | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+       | "O" | "P" | "Q" | "R" | "S" | "T" | "U"
+       | "V" | "W" | "X" | "Y" | "Z" | "a" | "b"
+       | "c" | "d" | "e" | "f" | "g" | "h" | "i"
+       | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+       | "q" | "r" | "s" | "t" | "u" | "v" | "w"
+       | "x" | "y" | "z" ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+symbol =  "|" | " " | "!" | "#" | "$" | "%" | "&" | "(" | ")" | "*" | "+" | "," | "-" | "." | "/" | ":" | ";" | ">" | "=" | "<" | "?" | "@" | "[" | "\" | "]" | "^" | " " | "`" | "{" | "}" | "~" ;
+bool = "yes" | "no" ;
